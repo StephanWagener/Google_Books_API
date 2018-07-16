@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:padding="9dp"
+    android:layout_marginTop="55dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:weightSum="2"
+            android:id="@+id/upper_part"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_weight="1"
+                android:id="@+id/details_fragment_image"
+                android:layout_width="0dp"
+                android:layout_height="230dp"
+                android:scaleType="fitXY"
+                app:srcCompat="@android:color/darker_gray" />
+
+            <TextView
+                android:layout_weight="1"
+                android:textColor="#333333"
+                android:textSize="30dp"
+                android:layout_marginStart="5dp"
+                android:id="@+id/details_fragment_title"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Title" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Author" />
+
+        <LinearLayout
+            android:weightSum="7"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_weight="5"
+                android:layout_marginTop="10dp"
+                android:textColor="#333333"
+                android:textSize="16dp"
+                android:id="@+id/details_fragment_author"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="Author" />
+
+            <Button
+                android:layout_weight="2"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:id="@+id/show_author_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Info" />
+
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_marginTop="10dp"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Publisher" />
+
+        <LinearLayout
+            android:weightSum="7"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_gravity="center"
+                android:layout_weight="5"
+                android:layout_marginTop="10dp"
+                android:textColor="#333333"
+                android:textSize="16dp"
+                android:id="@+id/details_fragment_publisher"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:text="Publisher" />
+
+            <Button
+                android:layout_weight="2"
+                style="@style/Widget.AppCompat.Button.Borderless.Colored"
+                android:id="@+id/show_publisher_button"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:text="Info" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_alignParentBottom="true"
+        style="@style/Widget.AppCompat.Button.Borderless.Colored"
+        android:id="@+id/show_book_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Show" />
+
+</RelativeLayout>
